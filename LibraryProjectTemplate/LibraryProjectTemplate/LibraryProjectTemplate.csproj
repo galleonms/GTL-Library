@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180227200431_intial.cs" />
+    <Compile Remove="Migrations\20180227200431_intial.Designer.cs" />
+    <Compile Remove="Migrations\20180227200949_newDb.cs" />
+    <Compile Remove="Migrations\20180227200949_newDb.Designer.cs" />
+    <Compile Remove="Migrations\20180227201347_init.cs" />
+    <Compile Remove="Migrations\20180227201347_init.Designer.cs" />
+    <Compile Remove="Migrations\20180304114029_InitialCreate.cs" />
+    <Compile Remove="Migrations\20180304114029_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20180430202452_initGTL12.cs" />
+    <Compile Remove="Migrations\20180430202452_initGTL12.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\app\shared\services\book.ts" />
+    <None Remove="ClientApp\app\shared\services\data.service.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\header\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\shared\book.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\services\data.service.ts" />
+  </ItemGroup>
+
+</Project>
